@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulario Registro</title>
+</head>
+<style>
+  
+       :root{
+            --main-header-color:linear-gradient(45deg,#FAD7A0,#211F1F);
+        }
+        body,html{
+            margin: 0;
+            padding: 0;
+            background-color: #fefefe;
+        }
+        header{
+            height: 68px;
+            padding: 10px;
+            width: calc(100% - 0px);
+            line-height: 40px;
+            display: flex;
+            background: var(--main-header-color);
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .logo-place{
+            width: 145px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .logo-place img{
+            width: 100%;
+        }
+        .search-place{
+            width: calc(100% - 440px);
+           display: flex;
+           padding: 0px 20px;
+        }
+        .search-place input{
+        padding: 10px;
+           font-size: 15px;
+           background-color: #fefefe;
+           border: 1px solid #ccc;
+           width: calc(100% - 62px);
+           font-family: 'Bebas Neue', cursive;
+       }
+       .search-place input:placeholder{
+           color: #ccc;
+       }
+        .btn.main{
+            padding: 10px;
+            font-size: 15px;
+            background-color: #fefefe;
+            border-style: none;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .btn-search{
+            width: 40px;
+        }
+        .options-place{
+            width: 250px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .item-option{
+            padding: 5px 10px;
+            line-height: 30px;
+            font-size: 30px;
+            cursor: pointer;
+            color: #fff;
+        }
+        .main-content{
+            margin-top: 60px;
+            width: 100%;
+            font-family: 'spartan', sans-serif;
+        }
+        .content-page{
+            margin: auto;
+            padding: 10px;
+            width: calc(100% - 20px);
+            max-width: 1180px;
+        }
+        .title-section{
+            padding: 10px 0;
+            font-size: 20px;
+            color: #aaa;
+        }
+</style>
+<body>
+
+  <section class="form-register">
+    <h4>Formulario Registro</h4>
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+    <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+    <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+    <input class="botons" type="submit" value="Registrar">
+    <p><a href="#">¿Ya tengo Cuenta?</a></p>
+  </section>
+  <header>
+    <div class="logo-place"><img src="imagenes/logoorical.png"></div>
+     <div class="search-place">
+         <input type="text" id="idbusqueda" placeholder="Encuenta todo lo que necesitas...">
+         <button class="btn-main btn-search"><i class="fa fa-search" aria-hidden="true"></i>
+         </button>
+     </div>
+     <ul class="menu">
+        <li><a href="index.php">Inicio</a></li>
+        <li><a href="productos.php">Productos</a></li>
+    </ul>
+    <div class="options-place">
+      <div class="item-option" title="Registrate"><a href="formulario.html"><i class="fa fa-user-circle-o"aria-hidden="true"></i></a></div>
+         <div class="item-option" title="Ingresar"><a href="login.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a></div>
+         <div class="item-option" title="Mis compras"><a href="pedidos.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+     </div>
+ </header>
+
+</body>
+</html>
